@@ -38,26 +38,26 @@ body {
 
 /* Typography */
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-
-h3 {
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
+h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
 p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 a {
@@ -129,28 +129,28 @@ nav {
 
 /* Container */
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 6rem 2rem 2rem;
+    padding: 5rem 1.5rem 1.5rem;
 }
 
 /* Sections */
 section {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 /* Grid Layouts */
 .grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.25rem;
 }
 
 .grid-2 {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .grid-3 {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* Buttons */
