@@ -1,0 +1,237 @@
+/* Glassmorphism Card Styles */
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.2), 
+                0 0 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hero Glass Card */
+.glass-hero {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 24px;
+    padding: 3rem;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Card */
+.glass-contact {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Container */
+.glass-image-wrapper {
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.1));
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation Glass Effect */
+.glass-nav {
+    background: rgba(61, 90, 128, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Card Variants */
+.glass-card.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    min-height: 400px;
+}
+
+.glass-card.project-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* Framework Card Variants */
+.glass-card.framework-card {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.glass-card.framework-card:hover {
+    background: rgba(255, 255, 255, 0.13);
+}
+
+/* Presentation Card with PDF Preview */
+.glass-card.presentation-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+}
+
+.pdf-preview-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-preview {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Section Headers with Glass Effect */
+.glass-section-header {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+/* Impact Badge */
+.impact-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 107, 53, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+}
+
+/* Image in Cards */
+.card-image {
+    width: 100%;
+    border-radius: 12px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* List Styles in Glass Cards */
+.glass-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.glass-card ul li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.glass-card ul li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--sunset-orange);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Contact Info Icons */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    font-size: 1.5rem;
+}
+
+/* LinkedIn Button */
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(10, 102, 194, 0.3);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background: rgba(10, 102, 194, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 102, 194, 0.3);
+}
+
+/* Responsive Glass Effects */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+    
+    .glass-hero {
+        padding: 2rem;
+    }
+    
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .pdf-preview {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass-card {
+        padding: 1rem;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .pdf-preview {
+        height: 300px;
+    }
+}

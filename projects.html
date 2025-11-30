@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI and ML projects by Josh Horton - Fleet Management, Internal Support, IoT Battery Health, and Supply Chain solutions">
+    <title>Projects - Josh Horton</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/glassmorphism.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">JKH</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="frameworks.html">Frameworks</a></li>
+                <li><a href="presentations.html">Presentations</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin-bottom: 3rem;">AI & ML Projects</h1>
+
+        <!-- Fleet Management AI Coach -->
+        <section id="fleet" class="glass-card project-card" style="margin-bottom: 3rem;">
+            <h2>Fleet Management AI Coach</h2>
+            <div class="impact-badge">💰 $5,000 savings per vehicle annually</div>
+            
+            <h3 style="margin-top: 2rem;">Problem</h3>
+            <p>Small business owners managing vehicle fleets face challenges such as inefficient operations, rising costs, and difficulty identifying and resolving anomalies. Traditional fleet management tools are often complex, time-consuming, and fail to provide actionable insights in a user-friendly way. These issues hinder business growth and operational efficiency, requiring a smarter, AI-driven approach.</p>
+            
+            <h3>Why it Matters</h3>
+            <p>Inefficient fleet management costs small businesses an average of $5,000 per vehicle annually through fuel waste, downtime, and security and safety risks.</p>
+            
+            <h3>Solution</h3>
+            <p>The Fleet Management Coach is a conversational AI service guiding business owners through actions to reduce costs, improve efficiency, enhance driver safety, and minimize downtime. It provides real-time insights and support to optimize fleet operations and fuel consumption, predict maintenance needs, and instantly alert users to potential problems.</p>
+            
+            <div class="expand-btn" data-target="fleet-capabilities">Show More <span class="expand-icon">▼</span></div>
+            <div id="fleet-capabilities" class="expandable-content">
+                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
+                <ul>
+                    <li><strong>Proactive Anomaly Detection:</strong> Instantly alerts users to potential issues such as harsh braking, speeding, or vehicle malfunctions.</li>
+                    <li><strong>Predictive Maintenance:</strong> Analyzes vehicle data to predict potential maintenance needs, minimizing downtime and unexpected repair costs.</li>
+                    <li><strong>Fuel Use Optimization:</strong> Provides insights and recommendations to improve fuel consumption through driving behavior analysis, and idle time reduction.</li>
+                    <li><strong>Driver Behavior Coaching:</strong> Tracks driver performance, identifies areas for improvement, and provides feedback to enhance driver safety and efficiency.</li>
+                </ul>
+                
+                <h3>Technology Stack</h3>
+                <p><strong>Cloud Infrastructure (GCP)</strong></p>
+                <ul>
+                    <li>Google Kubernetes Engine (GKE): Orchestrates and manages the containerized application components.</li>
+                    <li>Cloud Pub/Sub: Enables real-time, low-latency communication between data ingestion, processing, and alerting systems.</li>
+                    <li>Dataflow: Processes real-time data streams for immediate anomaly detection.</li>
+                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
+                    <li>Cloud SQL: Stores structured data such as configurations, user settings, and alert thresholds.</li>
+                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
+                </ul>
+                
+                <p><strong>AI/ML Services</strong></p>
+                <ul>
+                    <li>Vertex AI: Trains, deploys, and manages the machine learning models (Isolation Forest, Random Forest) for anomaly detection.</li>
+                    <li>Gemini LLM: Powers the conversational interface and generates insights.</li>
+                </ul>
+                
+                <p><strong>Frameworks</strong></p>
+                <ul>
+                    <li>Crew AI: Orchestrates workflows and manages AI model interactions.</li>
+                </ul>
+            </div>
+            
+            <div class="tags" style="margin-top: 1.5rem;">
+                <span class="tag">GCP</span>
+                <span class="tag">GKE</span>
+                <span class="tag">Pub/Sub</span>
+                <span class="tag">Dataflow</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Cloud SQL</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Gemini LLM</span>
+                <span class="tag">Crew AI</span>
+                <span class="tag">Isolation Forest</span>
+                <span class="tag">Random Forest</span>
+            </div>
+        </section>
+
+        <!-- Internal Support Agent -->
+        <section id="support" class="glass-card project-card" style="margin-bottom: 3rem;">
+            <h2>Internal Support Agent</h2>
+            <div class="impact-badge">📈 30-60% productivity increase</div>
+            
+            <h3 style="margin-top: 2rem;">Problem</h3>
+            <p>Organizations face increasing operational complexity, with internal teams often juggling multiple tools and workflows to address routine tasks and strategic initiatives. This fragmented approach leads to inefficiencies, misaligned efforts, and wasted time—limiting overall productivity.</p>
+            
+            <h3>Why it Matters</h3>
+            <p>Inefficient internal support contributes to a significant productivity loss of about 30%-60%. This impacts operational costs and employee morale.</p>
+            
+            <h3>Solution</h3>
+            <p>An AI chat service, similar to ChatGPT, Gemini, or Claude that centralizes support, streamlining access to information and tools. This reduces redundancies and improve response times, leading to increased efficiency and improved collaboration, all in a tool that the team uses regularly: Slack.</p>
+            
+            <div class="expand-btn" data-target="support-capabilities">Show More <span class="expand-icon">▼</span></div>
+            <div id="support-capabilities" class="expandable-content">
+                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
+                <ul>
+                    <li><strong>Natural Language Processing:</strong> Incorporates capabilities similar to Google Gemini, understands and responds to employee questions naturally, handling complex requests with ease.</li>
+                    <li><strong>Contextual Awareness:</strong> Maintains conversation context for personalized and relevant responses, improving user experience.</li>
+                    <li><strong>Knowledge Base Integration:</strong> Seamlessly integrated with internal resources, the agent instantly retrieves relevant information for accurate and efficient responses. Some knowledge bases include: BigQuery, GCS, Confluence, and options for many more.</li>
+                    <li><strong>Task Automation & Tool Integration:</strong> Automates many common tasks freeing up employee time and improving efficiency. Includes tools for tasks such as: data analysis, meeting summarization, state of the business updates, shipping label creations, options for many more.</li>
+                </ul>
+                
+                <h3>Technology Stack</h3>
+                <p><strong>Cloud Infrastructure (GCP)</strong></p>
+                <ul>
+                    <li>Cloud Pub/Sub: Enables real-time, low-latency communication between data ingestion, processing, and alerting systems.</li>
+                    <li>Cloud Functions: Used to create serverless functions for handling specific tasks, such as data processing and event handling.</li>
+                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
+                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
+                </ul>
+                
+                <p><strong>AI/ML Services</strong></p>
+                <ul>
+                    <li>Vertex AI: Provides the machine learning platform for model training, deployment, and management.</li>
+                    <li>Gemini: Serves as the core large language model, powering the AI's natural language understanding and generation capabilities.</li>
+                </ul>
+                
+                <p><strong>Frameworks</strong></p>
+                <ul>
+                    <li>Crew AI: Structures the interaction with Gemini, manages prompts, and chains together multiple calls to Gemini for complex requests.</li>
+                </ul>
+            </div>
+            
+            <div class="tags" style="margin-top: 1.5rem;">
+                <span class="tag">GCP</span>
+                <span class="tag">Pub/Sub</span>
+                <span class="tag">Cloud Functions</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Gemini</span>
+                <span class="tag">Crew AI</span>
+                <span class="tag">Slack Integration</span>
+                <span class="tag">NLP</span>
+            </div>
+        </section>
+
+        <!-- IoT Device Battery Health -->
+        <section id="iot" class="glass-card project-card" style="margin-bottom: 3rem;">
+            <h2>IoT Device Battery Health</h2>
+            <div class="impact-badge">💵 $100K-$200K loss prevention per incident</div>
+            
+            <h3 style="margin-top: 2rem;">Problem</h3>
+            <p>Battery failures in IoT tracking devices lead to operational disruptions, increased maintenance costs, and potential data loss. Traditional methods of battery monitoring lack precision and scalability, making it difficult to address these challenges effectively.</p>
+            
+            <h3>Why it Matters</h3>
+            <p>Operations disruptions and potential data loss caused by battery failures can cause significant financial loss to both customers and our business.</p>
+            
+            <h3>Solution</h3>
+            <p>The Tracker Battery solution leverages machine learning to predict battery life with high accuracy, enabling proactive maintenance and uninterrupted device performance.</p>
+            
+            <div class="expand-btn" data-target="iot-capabilities">Show More <span class="expand-icon">▼</span></div>
+            <div id="iot-capabilities" class="expandable-content">
+                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
+                <ul>
+                    <li><strong>Battery Life Prediction:</strong> Predicts the number of days of remaining battery life for each device, enabling informed decisions for proactive maintenance. Analyzes real-time and historical data, including message frequency, transmission power, and environmental conditions.</li>
+                    <li><strong>Anomaly Detection:</strong> Identifies irregular battery drain patterns caused by hardware issues or adverse environmental factors. Alerts users to potential device malfunctions, ensuring timely intervention.</li>
+                    <li><strong>Proactive Alerts:</strong> Automatically generates notifications when battery levels approach critical thresholds. Provides actionable recommendations for scheduling maintenance or replacing batteries before failures occur.</li>
+                    <li><strong>Scalable Monitoring:</strong> Supports thousands of devices across diverse geographies and use cases. Adapts to varying device models and configurations, ensuring broad applicability.</li>
+                </ul>
+                
+                <h3>Technology Stack</h3>
+                <p><strong>Cloud Infrastructure (GCP)</strong></p>
+                <ul>
+                    <li>Cloud Functions: Used to create serverless functions for handling specific tasks, such as data processing and event handling.</li>
+                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
+                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
+                </ul>
+                
+                <p><strong>AI/ML Services</strong></p>
+                <ul>
+                    <li>Vertex AI: Provides the machine learning platform for model training, deployment, and management (XGBoost).</li>
+                </ul>
+            </div>
+            
+            <div class="tags" style="margin-top: 1.5rem;">
+                <span class="tag">GCP</span>
+                <span class="tag">Cloud Functions</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">ML Ops</span>
+                <span class="tag">Predictive Analytics</span>
+                <span class="tag">IoT</span>
+            </div>
+        </section>
+
+        <!-- Supply Chain AI Command Center -->
+        <section id="supply-chain" class="glass-card project-card" style="margin-bottom: 3rem;">
+            <h2>Supply Chain AI Command Center</h2>
+            <div class="impact-badge">🚨 15-30% revenue loss prevention</div>
+            
+            <h3 style="margin-top: 2rem;">Problem</h3>
+            <p>Traditional supply chain monitoring systems rely heavily on manual processes and reactive approaches, leading to inefficiencies, security vulnerabilities, and costly delays. These legacy systems struggle to scale and provide real-time insights, limiting their ability to address modern supply chain challenges such as theft, tampering, and route deviations.</p>
+            
+            <h3>Why it Matters</h3>
+            <p>Inefficient supply chain monitoring leads to substantial financial losses. On average, theft incidents result in losses ranging from $100,000 to $200,000 per incident and shipping delays can cause revenue losses of 15% to 30%.</p>
+            
+            <h3>Solution</h3>
+            <p>The Supply Chain Command Center leverages advanced AI and machine learning to deliver real-time anomaly detection, automated responses, and actionable insights, enabling proactive and scalable supply chain management.</p>
+            
+            <div class="expand-btn" data-target="supply-capabilities">Show More <span class="expand-icon">▼</span></div>
+            <div id="supply-capabilities" class="expandable-content">
+                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
+                <ul>
+                    <li><strong>Proactive Anomaly Detection:</strong> Uses machine learning models to analyze historical and real-time data streams. Flags patterns indicative of theft, tampering, or route deviations for early intervention. Human-in-the-loop verification allows operators to confirm anomalies and provide feedback for model improvement.</li>
+                    <li><strong>Automated Response:</strong> Implements tiered escalation protocols to notify stakeholders based on incident severity. Features automated workflows, including phone trees, to ensure swift and effective responses. Human operators can review and override automated actions for critical situations. Includes system triggers alerts and actions (e.g., rerouting, security intervention) based on detected anomalies. Feedback from incident response helps fine-tune automated workflows.</li>
+                    <li><strong>Actionable Insights:</strong> Provides data-driven recommendations and reports to optimize supply chain processes and enhance security.</li>
+                </ul>
+                
+                <h3>Technology Stack</h3>
+                <p><strong>Cloud Infrastructure (GCP)</strong></p>
+                <ul>
+                    <li>Google Kubernetes Engine (GKE): Orchestrates and manages the containerized application components.</li>
+                    <li>Cloud Pub/Sub: Enables real-time, low-latency communication between data ingestion, processing, and alerting systems.</li>
+                    <li>Dataflow: Processes real-time data streams for immediate anomaly detection.</li>
+                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
+                    <li>Cloud SQL: Stores structured data such as configurations, user settings, and alert thresholds.</li>
+                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
+                </ul>
+                
+                <p><strong>AI/ML Services</strong></p>
+                <ul>
+                    <li>Vertex AI: Trains, deploys, and manages the machine learning models (Isolation Forest, Random Forest) for anomaly detection.</li>
+                    <li>Gemini LLM: Generates reports, explanations, and communicates insights using natural language.</li>
+                </ul>
+                
+                <p><strong>Frameworks</strong></p>
+                <ul>
+                    <li>LangGraph: Orchestrates workflows, manages AI model interactions, and coordinates automated responses.</li>
+                </ul>
+            </div>
+            
+            <div class="tags" style="margin-top: 1.5rem;">
+                <span class="tag">GCP</span>
+                <span class="tag">GKE</span>
+                <span class="tag">Pub/Sub</span>
+                <span class="tag">Dataflow</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Cloud SQL</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Gemini LLM</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">Isolation Forest</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">Human-in-the-Loop</span>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Josh Horton. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
