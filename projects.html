@@ -29,7 +29,69 @@
     </nav>
 
     <div class="container">
-        <h1 style="text-align: center; margin-bottom: 1.5rem;">AI & ML Projects</h1>
+        <h1 style="text-align: center; margin-bottom: 1.5rem;">Projects</h1>
+
+        <!-- Supply Chain AI Command Center -->
+        <section id="supply-chain" class="glass-card project-card" style="margin-bottom: 1.5rem;">
+            <h2>Supply Chain AI Command Center</h2>
+            <div class="impact-badge">🚨 15-30% revenue loss prevention</div>
+            
+            <h3 style="margin-top: 2rem;">Problem</h3>
+            <p>Traditional supply chain monitoring systems rely heavily on manual processes and reactive approaches, leading to inefficiencies, security vulnerabilities, and costly delays. These legacy systems struggle to scale and provide real-time insights, limiting their ability to address modern supply chain challenges such as theft, tampering, and route deviations.</p>
+            
+            <h3>Why it Matters</h3>
+            <p>Inefficient supply chain monitoring leads to substantial financial losses. On average, theft incidents result in losses ranging from $100,000 to $200,000 per incident and shipping delays can cause revenue losses of 15% to 30%.</p>
+            
+            <h3>Solution</h3>
+            <p>The Supply Chain Command Center leverages advanced AI and machine learning to deliver real-time anomaly detection, automated responses, and actionable insights, enabling proactive and scalable supply chain management.</p>
+            
+            <div class="expand-btn" data-target="supply-capabilities">Show More <span class="expand-icon">▼</span></div>
+            <div id="supply-capabilities" class="expandable-content">
+                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
+                <ul>
+                    <li><strong>Proactive Anomaly Detection:</strong> Uses machine learning models to analyze historical and real-time data streams. Flags patterns indicative of theft, tampering, or route deviations for early intervention. Human-in-the-loop verification allows operators to confirm anomalies and provide feedback for model improvement.</li>
+                    <li><strong>Automated Response:</strong> Implements tiered escalation protocols to notify stakeholders based on incident severity. Features automated workflows, including phone trees, to ensure swift and effective responses. Human operators can review and override automated actions for critical situations. Includes system triggers alerts and actions (e.g., rerouting, security intervention) based on detected anomalies. Feedback from incident response helps fine-tune automated workflows.</li>
+                    <li><strong>Actionable Insights:</strong> Provides data-driven recommendations and reports to optimize supply chain processes and enhance security.</li>
+                </ul>
+                
+                <h3>Technology Stack</h3>
+                <p><strong>Cloud Infrastructure (GCP)</strong></p>
+                <ul>
+                    <li>Google Kubernetes Engine (GKE): Orchestrates and manages the containerized application components.</li>
+                    <li>Cloud Pub/Sub: Enables real-time, low-latency communication between data ingestion, processing, and alerting systems.</li>
+                    <li>Dataflow: Processes real-time data streams for immediate anomaly detection.</li>
+                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
+                    <li>Cloud SQL: Stores structured data such as configurations, user settings, and alert thresholds.</li>
+                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
+                </ul>
+                
+                <p><strong>AI/ML Services</strong></p>
+                <ul>
+                    <li>Vertex AI: Trains, deploys, and manages the machine learning models (Isolation Forest, Random Forest) for anomaly detection.</li>
+                    <li>Gemini LLM: Generates reports, explanations, and communicates insights using natural language.</li>
+                </ul>
+                
+                <p><strong>Frameworks</strong></p>
+                <ul>
+                    <li>LangGraph: Orchestrates workflows, manages AI model interactions, and coordinates automated responses.</li>
+                </ul>
+            </div>
+            
+            <div class="tags" style="margin-top: 1.5rem;">
+                <span class="tag">GCP</span>
+                <span class="tag">GKE</span>
+                <span class="tag">Pub/Sub</span>
+                <span class="tag">Dataflow</span>
+                <span class="tag">BigQuery</span>
+                <span class="tag">Cloud SQL</span>
+                <span class="tag">Vertex AI</span>
+                <span class="tag">Gemini LLM</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">Isolation Forest</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">Human-in-the-Loop</span>
+            </div>
+        </section>
 
         <!-- Fleet Management AI Coach -->
         <section id="fleet" class="glass-card project-card" style="margin-bottom: 1.5rem;">
@@ -198,68 +260,6 @@
                 <span class="tag">ML Ops</span>
                 <span class="tag">Predictive Analytics</span>
                 <span class="tag">IoT</span>
-            </div>
-        </section>
-
-        <!-- Supply Chain AI Command Center -->
-        <section id="supply-chain" class="glass-card project-card" style="margin-bottom: 1.5rem;">
-            <h2>Supply Chain AI Command Center</h2>
-            <div class="impact-badge">🚨 15-30% revenue loss prevention</div>
-            
-            <h3 style="margin-top: 2rem;">Problem</h3>
-            <p>Traditional supply chain monitoring systems rely heavily on manual processes and reactive approaches, leading to inefficiencies, security vulnerabilities, and costly delays. These legacy systems struggle to scale and provide real-time insights, limiting their ability to address modern supply chain challenges such as theft, tampering, and route deviations.</p>
-            
-            <h3>Why it Matters</h3>
-            <p>Inefficient supply chain monitoring leads to substantial financial losses. On average, theft incidents result in losses ranging from $100,000 to $200,000 per incident and shipping delays can cause revenue losses of 15% to 30%.</p>
-            
-            <h3>Solution</h3>
-            <p>The Supply Chain Command Center leverages advanced AI and machine learning to deliver real-time anomaly detection, automated responses, and actionable insights, enabling proactive and scalable supply chain management.</p>
-            
-            <div class="expand-btn" data-target="supply-capabilities">Show More <span class="expand-icon">▼</span></div>
-            <div id="supply-capabilities" class="expandable-content">
-                <h3 style="margin-top: 1.5rem;">Solution Capabilities</h3>
-                <ul>
-                    <li><strong>Proactive Anomaly Detection:</strong> Uses machine learning models to analyze historical and real-time data streams. Flags patterns indicative of theft, tampering, or route deviations for early intervention. Human-in-the-loop verification allows operators to confirm anomalies and provide feedback for model improvement.</li>
-                    <li><strong>Automated Response:</strong> Implements tiered escalation protocols to notify stakeholders based on incident severity. Features automated workflows, including phone trees, to ensure swift and effective responses. Human operators can review and override automated actions for critical situations. Includes system triggers alerts and actions (e.g., rerouting, security intervention) based on detected anomalies. Feedback from incident response helps fine-tune automated workflows.</li>
-                    <li><strong>Actionable Insights:</strong> Provides data-driven recommendations and reports to optimize supply chain processes and enhance security.</li>
-                </ul>
-                
-                <h3>Technology Stack</h3>
-                <p><strong>Cloud Infrastructure (GCP)</strong></p>
-                <ul>
-                    <li>Google Kubernetes Engine (GKE): Orchestrates and manages the containerized application components.</li>
-                    <li>Cloud Pub/Sub: Enables real-time, low-latency communication between data ingestion, processing, and alerting systems.</li>
-                    <li>Dataflow: Processes real-time data streams for immediate anomaly detection.</li>
-                    <li>BigQuery: Stores and analyzes historical data used for model training and generating insights.</li>
-                    <li>Cloud SQL: Stores structured data such as configurations, user settings, and alert thresholds.</li>
-                    <li>Cloud Monitoring and Logging: Monitors system health, performance, and logs for debugging and optimization.</li>
-                </ul>
-                
-                <p><strong>AI/ML Services</strong></p>
-                <ul>
-                    <li>Vertex AI: Trains, deploys, and manages the machine learning models (Isolation Forest, Random Forest) for anomaly detection.</li>
-                    <li>Gemini LLM: Generates reports, explanations, and communicates insights using natural language.</li>
-                </ul>
-                
-                <p><strong>Frameworks</strong></p>
-                <ul>
-                    <li>LangGraph: Orchestrates workflows, manages AI model interactions, and coordinates automated responses.</li>
-                </ul>
-            </div>
-            
-            <div class="tags" style="margin-top: 1.5rem;">
-                <span class="tag">GCP</span>
-                <span class="tag">GKE</span>
-                <span class="tag">Pub/Sub</span>
-                <span class="tag">Dataflow</span>
-                <span class="tag">BigQuery</span>
-                <span class="tag">Cloud SQL</span>
-                <span class="tag">Vertex AI</span>
-                <span class="tag">Gemini LLM</span>
-                <span class="tag">LangGraph</span>
-                <span class="tag">Isolation Forest</span>
-                <span class="tag">Random Forest</span>
-                <span class="tag">Human-in-the-Loop</span>
             </div>
         </section>
     </div>
