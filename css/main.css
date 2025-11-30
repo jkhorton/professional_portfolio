@@ -52,12 +52,12 @@ h2 {
 h3 {
     font-size: 1.35rem;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
     font-size: 1rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 a {
@@ -136,7 +136,7 @@ nav {
 
 /* Sections */
 section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Grid Layouts */
@@ -151,6 +151,69 @@ section {
 
 .grid-3 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.5) 0%, 
+        rgba(255, 255, 255, 0.2) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--sunset-coral), var(--sunset-pink));
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.timeline-content {
+    padding: 1rem;
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+}
+
+.timeline-role {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 /* Buttons */
